@@ -1,5 +1,7 @@
 /* Box Model Hack */
 * {
+     margin: 0px;
+     padding: 0px;
      box-sizing: border-box;
 }
 
@@ -21,19 +23,52 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+.body-text {
+display: flex;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+align-items: center;
+justify-content: center;
+margin-top: 250px;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+header > nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     min-height: 8vh;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
+.nav-links {
+    display: flex; 
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.nav-links li {
+     list-style: none;
+}
+ .nav-links a{
+     text-decoration: none;
+     letter-spacing: 3px;
+     font-weight: bold;
+     font-size: 14px;
+     padding: 14px 16px;
+ }
+
+.nav-links li a:hover:not(.active){
+     background-color: teal;
+}
+
+
+
 footer {
+ display: flex;
 
 }
 
