@@ -29,6 +29,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 align-items: center;
 justify-content: center;
 margin-top: 50px;
+font-size: 10px;
 }
 
 
@@ -37,11 +38,10 @@ margin-top: 50px;
 /*******************************************/
 header > nav {
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      align-items: center;
-     min-height: 8vh;
+     min-height: 3em;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 .nav-links {
@@ -53,11 +53,12 @@ header > nav {
 .nav-links li {
      list-style: none;
 }
+
 .nav-links a{
      text-decoration: none;
      letter-spacing: 2px;
      font-weight: bold;
-     font-size: 14px;
+     font-size: 1em;
      padding: 14px 16px;
      color: black;
  }
@@ -68,41 +69,55 @@ header > nav {
 
 main {
     display: flex;
-    
+   
 }
 
 section {
      display: flex;
+     align-items:center;
+     flex-direction: column;
      margin: 50px ;
-     height: 200px;
+     padding: 50px;
      
 }
 
-.welcome {
-display: flex;
-align-items: center;
-flex-direction: column;
-
-}
-
-h1 h2 span p {
-     display: flex;
-
-}
-
-.about {
+h1,h2,span,p {
      display: flex;
      align-items: center;
-     flex-direction: column;
-     
+     margin: 10px;
+     padding: 10px;
 }
 
+img {
+    background:fixed;
+     width: 40%;
+}
+.logo{
+     width: 20%;
+}
+
+.welcome h1{
+     font-size: 4.5em;
+}
+
+.welcome span{
+     font-size: 2em;
+}
+.about h2 {
+     font-size: 3.5em;
+}
+.about p{
+     font-size: 2em;
+}
 .contact{
      display: flex;
      flex-direction: column;
      align-items: center;
+     height: 500px;
 }
-
+.contact h3{
+     font-size: 2.5em;
+}
 form {
      margin: 50px;
 }
@@ -129,11 +144,15 @@ form {
 }
 
 
-footer {
+.footer-links {
  display: flex;
- margin-top: 200px;
+ padding-top: 20px;
+ margin-top: 10px;
+ justify-content: space-around;
 }
-
+footer span{
+     font-size: 1em;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
