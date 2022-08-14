@@ -151,16 +151,28 @@ form {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+/* Project page styles*/
+
+section > .projects-page, .projects{
+     font-size: 3em;
+}
+
+
 /* Picture slideshow on Project Page*/
-.slideShow-container{
+.slideShow, .slideShow-container, .containers{
      max-width: 1000px;
      position: relative;
      margin: auto;
 }
 
-.containers > img{
-     width: 100%;
-     display: none;
+div .images > img {
+     display: flex;
+     width: 40%;    
+}
+
+div .info{
+     text-align: center;
+     font-size: 2em;
 }
 
 .Back, .forward{
@@ -191,9 +203,30 @@ form {
      cursor: pointer;
      height: 16px;
      width: 16px;
-     margin: 0 3px;
+     margin: 10px 5px;
      background-color: #acc;
      border-radius: 50%;
      display: inline-block;
      transition: background-color 0.5s ease;
+   }
+
+   .enable, .dots:hover {
+     background-color: #717161;
+   }
+
+   .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.4s;
+     animation-name: fade;
+     animation-duration: 1.4s;
+   }
+   
+   @-webkit-keyframes fade {
+     from {opacity: .5}
+     to {opacity: 2}
+   }
+   
+   @keyframes fade {
+     from {opacity: .5}
+     to {opacity: 2}
    }
