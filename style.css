@@ -36,6 +36,10 @@ font-size: 10px;
 /******************************************
 /* LAYOUT
 /*******************************************/
+html{
+     scroll-behavior: smooth;
+}
+
 header > nav {
      display: flex;
      justify-content: space-between;
@@ -58,7 +62,7 @@ header > nav {
      text-decoration: none;
      letter-spacing: 2px;
      font-weight: bold;
-     font-size: 1em;
+     font-size: 1.2em;
      padding: 14px 16px;
      color: black;
  }
@@ -70,7 +74,7 @@ header > nav {
 
 main {
     display: flex;
-   
+    position: relative;
 }
 
 section {
@@ -91,24 +95,29 @@ h1,h2,span,p {
 
 img {
     background:fixed;
-     width: 40%;
-}
-.logo{
-     width: 20%;
+     width: 65%;
 }
 
-.welcome h1{
+.logo{
+     width: 20%;
+     filter: drop-shadow(2px 4px 8px #000);
+
+}
+
+ h1{
      font-size: 4.5em;
 }
 
-.welcome span{
+span{
      font-size: 2em;
+     max-width: fit-content;
 }
-.about h2 {
+ h2 {
      font-size: 3.5em;
 }
-.about p{
+ p{
      font-size: 2em;
+     max-width: fit-content;
 }
 .contact{
      display: flex;
@@ -116,7 +125,7 @@ img {
      align-items: center;
      height: 600px;
 }
-.contact h3{
+ h3{
      font-size: 2.5em;
 }
 form {
@@ -150,13 +159,7 @@ form {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-/* Project page styles*/
-
-section > .projects-page, .projects{
-     font-size: 3em;
-}
-
+/* Projects section styles*/
 
 /* Picture slideshow on Project Page*/
 .slideShow, .slideShow-container, .containers{
