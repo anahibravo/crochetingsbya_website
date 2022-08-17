@@ -81,8 +81,7 @@ section {
      display: flex;
      align-items:center;
      flex-direction: column;
-     margin: 50px ;
-     padding: 50px;
+     padding: 25px;
      
 }
 
@@ -110,14 +109,16 @@ img {
 
 span{
      font-size: 2em;
-     max-width: fit-content;
 }
+
  h2 {
      font-size: 3.5em;
 }
- p{
+
+p{
      font-size: 2em;
      max-width: fit-content;
+     align-items: center;
 }
 .contact{
      display: flex;
