@@ -15,19 +15,21 @@
 	</head>
 	<body>
         <header>
-            <nav>
+            <div>
                 <img class="logo" src="/crochetingsbya/pictures/logo-no-background-removebg-preview.png" alt="logo">
+                <img class="banner" src="/crochetingsbya/pictures/Banner-removebg.png"
+            </div>
+            <nav>
                 <ul class="nav-links">
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="#aboutMe"> About</a> </li>
-                    <li><a href="/crochetingsbya/pages/crochetprojects.html">  Projects</a> </li>
+                    <li><a href="#projects">  Projects</a> </li>
                     <li><a href="#pointOfContact"> Contact </a> </li>
-                    <li><a href="https://www.instagram.com/crochetingsbya/" <i class="fa-brands fa-instagram"></i> </a></li>
                 </ul>
             </nav>
         </header>
         <main class="body-text">
-            <div>
+            <section>
             <section class="welcome">
                 <h1>Welcome!</h1>
                 <span>All things Crochet!</span>
@@ -35,12 +37,42 @@
             </section>
 
             <section class="about">
-                <h2 id="aboutMe">About</h2>
+                <h3 id="aboutMe">About</h3>
                 <p>Thank you for visiting my page. I was exposed to crochet since I was a little kid, seeing that my great grandmother, grandmother, and mother all crochet. I found my love for crochet back in 2014. Amigurumi is what really sparked my interest. I haven't looked back ever since. Let me know what you think or what you would like to see me create.
                 Let's crochet the world! </p>
             
                 <img class="firstImage" src="/crochetingsbya/pictures/hook2.png">
             </section>
+            <section class="slideShow">
+                <h3 id="projects">Projects</h3>
+                <div class="slideShow-container fade"> 
+                    
+                    <div class="images">
+                        <img class="containers" src="/crochetingsbya/pictures/Frida.JPG" alt="crochet">
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="images">
+                        <img class="containers" src="/crochetingsbya/pictures/Mermaid.jpeg" alt="crochet">
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="images">
+                        <img class="containers" src="/crochetingsbya/pictures/Suga.JPG" alt="crochet">
+                        <div class="info"></div>
+                    </div>
+                    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="bottom-dots">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                    <span class="dots" onclick="currentSlide(3)"></span>
+
+                </div>
+            </section>
+
             <section class="contact">
                 <h3 id="pointOfContact">Contact Me</h3> 
                 <form  class="contact-box">
