@@ -5,31 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrochetingsbyA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/crochetingsbya/style.css">
+
 </head>
 <body>
-    <nav>
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-              <svg  class="bi me-2" width="40" height="32" src="/"> </svg>
-              <span class="fs-4">Crochetings by A</span>
-            </a>
-      
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        
-        </header>
-      
-    </nav>
+    <nav class="container-fuild mb-5">
+            <header class="d-flex justify-content-center py-3">
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+              </ul>
+            </header>
+     </nav>
 
     <main>
-        <section class="About">
-           
+        <section class="About mb-5">
+          <div class="container-fuild">
+            <h2>Welcome!</h2>
+           <p>My name is Anahi and welcome to my crochet page! I was introduced to crochet since I was a little girl. My great-grandmother, my grandmother, and my mother all crochet. I however was uninterested in the art up until 2014 when I saw an amigurumi book at the library. I decided to give it another chance and I started to love every stitch. I started to learn new skills and it became second nature to me. Crochet has helped me inmensly during my post-partum depression. It helps me unwind and it makes me happy.
+            Lately I have been teaching others to crochet at the public library. It's so cool to see people wanting to learn a new skill. 
+            When I'm not crocheting, I am hanging out with my kids and my hubby, learning to code, or thinking about what to crochet next!
+
+            Join me and lets 
+           </p>
+        </div>
+        </section>
+        <section class="Projects mb-5"> 
+            <h2>Projects</h2>
+         <div class="container-fuild">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner border border-info rounded img-fluid">
+                  <div class="carousel-item active">
+                    <img src="/crochetingsbya/views/Frida.png" class="d-block w-100 " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/crochetingsbya/views/Mermaid.png" class="d-block w-100 " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/crochetingsbya/views/Suga.png" class="d-block w-100  " alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+         </div>
+    
+
+        </section>
+
+        <section class="Contact mb-5">
+            <h2>Contact Me!</h2>
+            <form>
+             <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     
 </body>
 </html>
